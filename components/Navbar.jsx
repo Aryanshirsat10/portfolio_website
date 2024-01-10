@@ -10,14 +10,17 @@ const Navbar = () => {
     scroll.scrollToTop();
     setShowMenu(false);
   };
+  const [active, setActive] = useState('');
 
   return (
-    <nav className="bg-black py-4 md:py-2">
-      <div className="container mx-auto flex items-center justify-between">
+    <nav
+    className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-slate-950 border-2 border-b-orange-900 border-r-navcol border-l-navcol border-t-navcol`}>
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
-        <div className="flex items-center">
-          <button onClick={scrollToTop}>
+        <div className="flex items-center gap-2">
+          <button onClick={scrollToTop} className='font-bold text-2xl'>
             {/* <img src="/logo/logo-name.png" alt="Logo" className="w-36 cursor-pointer" /> */}
+            Aryan
           </button>
         </div>
 
@@ -34,34 +37,34 @@ const Navbar = () => {
             About
           </ScrollLink>
           <ScrollLink
-            to="projects"
+            to="Work"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className="text-white hover:text-red text-lg font-Poppins transition-all duration-300 ease-in-out"
           >
-            Projects
+            Work
           </ScrollLink>
           <ScrollLink
-            to="projects"
+            to="Education"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className="text-white hover:text-red text-lg font-Poppins transition-all duration-300 ease-in-out"
           >
-            Projects
+            Education
           </ScrollLink>
           <ScrollLink
-            to="projects"
+            to="Contact"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className="text-white hover:text-red text-lg font-Poppins transition-all duration-300 ease-in-out"
           >
-            Projects
+            Contact
           </ScrollLink>
           {/* Add similar ScrollLink components for other sections */}
         </div>

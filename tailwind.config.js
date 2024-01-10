@@ -18,7 +18,8 @@ module.exports = {
         red: "#ff0100",
         grey: "#ffffffa3",
         royalBlue: "#0c0c1c",
-        black: "2B2B2B"
+        black: "#2B2B2B",
+        navcol: "#020617"
       },
       fontFamily: {
         Poppins: ["Poppins", "sans-serif"],
