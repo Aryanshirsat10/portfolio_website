@@ -17,7 +17,8 @@
     "react-device-detect": "^2.2.3",
     "react-dom": "^18",
     "react-scroll": "^1.9.0",
-    "sass": "^1.69.7"
+    "sass": "^1.69.7",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

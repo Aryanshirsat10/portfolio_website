@@ -7,6 +7,26 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        tilt: "tilt 10s infinite linear",
+      },
+      keyframes:{
+        tilt: {
+          '0%, 50%, 100%': {
+            transform : "rotate(0deg)", 
+          },
+          "25%":{
+            transform: "rotate(1deg)",
+          },
+          "75%":{
+            transform: "rotate(-1deg)",
+          },
+      },
+    },
+    spacing: {
+      '540': '540px',
+      '70': '70%',
+    },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,10 +35,10 @@ module.exports = {
       colors: {
         bgColor: "#191924",
         darkPurple: "#191627",
-        red: "#ff0100",
+        navred: "#ff0100",
         grey: "#ffffffa3",
         royalBlue: "#0c0c1c",
-        black: "#2B2B2B",
+        navblack: "#2B2B2B",
         navcol: "#020617"
       },
       fontFamily: {

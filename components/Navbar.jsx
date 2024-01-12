@@ -14,16 +14,16 @@ const Navbar = () => {
 
   return (
     <nav
-    className={`sm:px-16 px-6 w-full flex items-center py-5 fixed top-0 z-20 bg-slate-950 border-2 border-b-orange-900 border-r-navcol border-l-navcol border-t-navcol`}>
+    className='sm:px-16 px-6 w-full flex items-center py-5  bg-black shadow-2xl shadow-slate-900'>
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo */}
         <div className="flex items-center gap-2">
           <button onClick={scrollToTop} className='font-bold text-2xl'>
             {/* <img src="/logo/logo-name.png" alt="Logo" className="w-36 cursor-pointer" /> */}
-            Aryan
+            <span className='text-4xl bg-gradient-to-br from-purple-700 via-pink-500 to-yellow-500 text-transparent bg-clip-text font-extrabold'>Aryan</span>
+            
           </button>
         </div>
-
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-7">
           <ScrollLink
@@ -32,7 +32,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70} // Adjust offset if needed based on your layout
             duration={500}
-            className="text-white hover:text-red text-lg font-Poppins transition-all duration-300 ease-in-out"
+            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
             About
           </ScrollLink>
@@ -42,7 +42,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="text-white hover:text-red text-lg font-Poppins transition-all duration-300 ease-in-out"
+            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
             Work
           </ScrollLink>
@@ -52,7 +52,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="text-white hover:text-red text-lg font-Poppins transition-all duration-300 ease-in-out"
+            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
             Education
           </ScrollLink>
@@ -62,7 +62,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="text-white hover:text-red text-lg font-Poppins transition-all duration-300 ease-in-out"
+            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
             Contact
           </ScrollLink>
