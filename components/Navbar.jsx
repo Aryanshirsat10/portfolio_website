@@ -32,7 +32,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70} // Adjust offset if needed based on your layout
             duration={500}
-            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
+            className="text hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
             About
           </ScrollLink>

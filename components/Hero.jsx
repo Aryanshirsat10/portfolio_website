@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
         return(
             <div className='relative'>
                 <div className='absolute top-1/4 left-44'>
-                    <h1 className='text-8xl font-extrabold '>Hi <br />I am  
+                    <h1 className='text-8xl font-extrabold'>Hi <br />I am  
                     <span className='bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text'> Aryan</span>
                     </h1><br />
                     {/* <h2 className='text-3xl font-bold '>I am a <span className='bg-gradient-to-br from-blue-700  to-pink-500 text-transparent bg-clip-text'>Fullstack Devloper</span></h2> */}
