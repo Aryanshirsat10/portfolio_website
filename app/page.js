@@ -1,6 +1,7 @@
 "use client"
 import Introanimation from '@/components/introanimation';
 import { useEffect, useState } from 'react'
+import '../app/globals.css';
 import { motion} from "framer-motion"
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero'
@@ -39,6 +40,7 @@ export default function Home() {
           delay: 0.5,
           ease: [0, 0.71, 0.2, 1.01]
         }}
+        
       >
         <Navbar />
         <Hero/>

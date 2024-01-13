@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+
 import Typewriter from 'typewriter-effect';
     const Hero = () => {
         return(
@@ -29,7 +30,7 @@ import Typewriter from 'typewriter-effect';
             <div className='absolute top-1/4 left-2/3 w-80 h-80 bg-purple-700  rounded-full blur-3xl mix-blend-softlight'></div>
             <div className='absolute top-1/4 left-3/4 w-80 h-80 bg-yellow-500  rounded-full blur-3xl mix-blend-softlight'></div>
             <div className='absolute top-1/4 left-70 w-80 h-80 overflow-hidden '>
-                <img src="/profileimg.png" alt=""  className='object-cover w-full h-full rounded-full z-10'/>
+                <img src='/assets/profileimg.png' alt=""  className='object-cover w-full h-full rounded-full z-10'/>
             </div>
             
             <div className='pt-540 grid gap-8 items-start justify-center'>
