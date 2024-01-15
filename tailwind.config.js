@@ -34,6 +34,7 @@ module.exports = {
       },
       colors: {
         bgColor: "#191924",
+        textcol: "#d3dbf9",
         darkPurple: "#191627",
         navred: "#ff0100",
         grey: "#ffffffa3",
