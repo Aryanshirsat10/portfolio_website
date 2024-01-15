@@ -30,7 +30,6 @@ const animation = isOdd ? variants.moveUp : variants.moveDown;
         initial={animation.initial}
         animate={inView ? animation.animate : animation.initial}
         transition={{ duration: 5 }}
-        id="projects"
       >
         <Tilt 
         options={{
