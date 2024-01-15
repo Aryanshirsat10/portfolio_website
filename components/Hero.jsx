@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Typewriter from 'typewriter-effect';
     const Hero = () => {
         return(
-            <div className='relative'>
+            <div className='relative mb-9'>
                 <div className='absolute top-1/4 left-44'>
                     <h1 className='text-8xl font-extrabold'>Hi <br />I am  
                     <span className='bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text'> Aryan</span>
