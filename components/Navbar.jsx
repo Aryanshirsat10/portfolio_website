@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'next/link';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 const Navbar = () => {
@@ -27,34 +28,34 @@ const Navbar = () => {
         {/* Desktop Menu */}
         <div className="hidden md:flex gap-7">
           <ScrollLink
-            to="about"
+            to="skills"
             spy={true}
             smooth={true}
             offset={-70} // Adjust offset if needed based on your layout
             duration={500}
             className="text hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
-            About
+            Skills
           </ScrollLink>
           <ScrollLink
-            to="Work"
+            to="projects"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
-            Work
+            Projects
           </ScrollLink>
           <ScrollLink
-            to="Education"
+            to="contact"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
-            Education
+            Contact
           </ScrollLink>
           <ScrollLink
             to="Contact"
@@ -64,7 +65,7 @@ const Navbar = () => {
             duration={500}
             className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >
-            Contact
+            Resume
           </ScrollLink>
           {/* Add similar ScrollLink components for other sections */}
         </div>

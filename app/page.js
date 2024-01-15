@@ -7,6 +7,8 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero'
 import Skills from '../components/Skills';
 import Projects from '@/components/Projects';
+import { Element } from 'react-scroll';
+import Contact from '@/components/Contact';
 export default function Home() {
 
   const [showHomepage, setShowHomepage] = useState(false);
@@ -44,8 +46,15 @@ export default function Home() {
       >
         <Navbar />
         <Hero/>
-        <Skills/>
-        <Projects/>
+        <Element name='skills`'>
+          <Skills/>
+        </Element>
+        <Element name='projects'>
+          <Projects/>
+        </Element>
+        <Element name='contact'>
+          <Contact/>
+        </Element>
       </motion.div>
         {/* )} */}
       </>
