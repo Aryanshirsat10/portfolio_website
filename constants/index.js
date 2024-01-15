@@ -239,7 +239,7 @@
       source_code_link: "https://github.com/Aryanshirsat10/3d_portfolio_template",
     },
     {
-      name: "Trip Guide",
+      name: "Media",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
@@ -260,7 +260,7 @@
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Medcare",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
