@@ -31,7 +31,7 @@ const Navbar = () => {
             to="skills"
             spy={true}
             smooth={true}
-            offset={-70} // Adjust offset if needed based on your layout
+            offset={-30} // Adjust offset if needed based on your layout
             duration={500}
             className="text hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
           >

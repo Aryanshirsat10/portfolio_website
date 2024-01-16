@@ -46,7 +46,7 @@ export default function Home() {
       >
         <Navbar />
         <Hero/>
-        <Element name='skills`'>
+        <Element name='skills'>
           <Skills/>
         </Element>
         <Element name='projects'>
