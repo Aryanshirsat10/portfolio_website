@@ -71,8 +71,9 @@ module.exports = {
       Dosis: ["Dosis", "sans-serif"],
     },
     boxShadow: {
-      'custom-2xl': '0 0 40px 0px rgba(183, 74, 170, 0.25),inset 0 0 80px 0px rgba(0, 0, 0, 0.5)',
+      'custom-2xl': '0 0 40px 0px rgba(183, 74, 170, 0.25)',
       'custom-shadow-hover': '0 0 50px 0px rgb(183, 74, 170),inset 5px 5px 20px 0px rgba(0,0,0,0.5)',
+      //inset 0 0 80px 0px rgba(0, 0, 0, 0.5)
     },
     },
   },
