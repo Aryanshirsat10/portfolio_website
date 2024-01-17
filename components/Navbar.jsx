@@ -33,7 +33,7 @@ const Navbar = () => {
             smooth={true}
             offset={-30} // Adjust offset if needed based on your layout
             duration={500}
-            className="text hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
+            className="text hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out cursor-pointer"
           >
             Skills
           </ScrollLink>
@@ -43,7 +43,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
+            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out cursor-pointer"
           >
             Projects
           </ScrollLink>
@@ -53,7 +53,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
+            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out cursor-pointer"
           >
             Contact
           </ScrollLink>
@@ -63,7 +63,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={500}
-            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out"
+            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out cursor-pointer"
           >
             Resume
           </ScrollLink>
