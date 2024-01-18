@@ -12,7 +12,7 @@ const Skills = () => {
         Hello There
       </div>
     </div> */}
-    <div className='p-5 mt-2 gap-14 flex flex-row overflow-x-auto no-scrollbar'>
+    <div className='p-5 mt-2 gap-14 flex flex-wrap overflow-x-auto no-scrollbar'>
       <div className="group relative h-[450px] w-[400px] rounded-2xl shadow-custom-2xl shadow-[#b74aaa] 
       flex justify-center duration-1000 preserve-3d 
       animate-rot items-center text-white bg-skillbg 

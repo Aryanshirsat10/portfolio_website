@@ -67,7 +67,6 @@ const Navbar = () => {
           >
             Resume
           </ScrollLink>
-          {/* Add similar ScrollLink components for other sections */}
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -87,7 +86,7 @@ const Navbar = () => {
         <div className="md:hidden mt-3">
           <div className="container mx-auto p-2">
             <ScrollLink
-              to="about"
+              to="skills"
               spy={true}
               smooth={true}
               offset={-70}
@@ -95,7 +94,7 @@ const Navbar = () => {
               className="text-white block py-2 font-Poppins cursor-pointer"
               onClick={() => setShowMenu(false)}
             >
-              About
+              Skills
             </ScrollLink>
             <ScrollLink
               to="projects"

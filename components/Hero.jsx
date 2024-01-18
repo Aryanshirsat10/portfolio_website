@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
     const Hero = () => {
         return(
@@ -48,9 +48,12 @@ import Typewriter from 'typewriter-effect';
                     duration-1000 
                     group-hover:duration-200 
                     animate-tilt"></div>
+                    
                     <button className=' relative px-7 py-4 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600'>
                         <span className='pr-6 text-gray-100'>Download my resume</span>
-                        <span className='pl-6 text-indigo-400 group-hover:text-gray-100 transition duration-200'>Resume &rarr;</span>
+                        <a download href="/Aryan_Shirsat_Resume.pdf">
+                            <span className='pl-6 text-indigo-400 group-hover:text-gray-100 transition duration-200'>Resume &rarr;</span>
+                        </a>
                     </button>
                     </div>
             </div>

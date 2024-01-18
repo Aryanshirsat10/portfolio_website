@@ -51,7 +51,7 @@ const Contact = () => {
     })
   }
   return (
-    <div className='p-5 xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+    <div className='p-5 xl:mt-12 xl:flex-row flex-wrap flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div 
       variants={slideIn('left','tween',0.2, 1)}
       className="flex-[0.75] bg-black-100 p-8 rounded-2xl ml-6">
@@ -108,7 +108,7 @@ const Contact = () => {
       <motion.div
       className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        <div className=" relative mt-32 flex p-12">
+        <div className="relative xl:mt-32 flex p-12 ">
             <div className='absolute top-3/4 left-1/4  w-80 h-80 bg-red-500  rounded-full blur-3xl mix-blend-softlight'></div>
             <div className='absolute top-3/4 left-[360px]  w-80 h-80 bg-yellow-500  rounded-full blur-3xl mix-blend-softlight'></div>
         </div>

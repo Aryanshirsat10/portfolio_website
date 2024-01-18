@@ -277,7 +277,7 @@
           color: "pink-text-gradient",
         },
       ],
-      image: '/assets/project3.png',
+      image: '/assets/project4.png',
       source_code_link: "https://github.com/",
     },
   ];
