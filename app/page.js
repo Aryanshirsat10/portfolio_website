@@ -26,36 +26,33 @@ export default function Home() {
     return(
 
       <>
-      {/* {showHomepage ? (
-      <div className='fade-in opacity-1 transition-opacity duration-1000 ease-in-out animate-fadeIn'>
-        <Navbar />
-        <Hero/>
-      </div> */}
-      {/* ) : ( */}
-        {/* <Introanimation /> */}
-      {/* )} */}
+      {showHomepage ? (
       <motion.div 
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 0.8,
-          delay: 0.5,
-          ease: [0, 0.71, 0.2, 1.01]
-        }}
-        
-      >
-        <Navbar />
-        <Hero/>
-        <Element name='skills'>
-          <Skills/>
-        </Element>
-        <Element name='projects'>
-          <Projects/>
-        </Element>
-        <Element name='contact'>
-          <Contact/>
-        </Element>
-      </motion.div>
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        duration: 0.8,
+        delay: 0.5,
+        ease: [0, 0.71, 0.2, 1.01]
+      }}
+      
+    >
+      <Navbar />
+      <Hero/>
+      <Element name='skills'>
+        <Skills/>
+      </Element>
+      <Element name='projects'>
+        <Projects/>
+      </Element>
+      <Element name='contact'>
+        <Contact/>
+      </Element>
+    </motion.div>
+       ) : ( 
+         <Introanimation /> 
+       )} 
+      
         {/* )} */}
       </>
       
