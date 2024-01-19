@@ -73,9 +73,9 @@ const Navbar = () => {
         <div className="md:hidden">
           <button onClick={toggleMenu}>
             {showMenu ? (
-              <img src="/icons/cross.svg" alt="Close Menu" />
+              <img src="/assets/cross.svg" alt="Close Menu" className='w-10 h-10 '/>
             ) : (
-              <img src="/icons/hamburger.svg" alt="Open Menu" />
+              <img src="/assets/menu.svg" alt="Open Menu" className='w-10 h-10'/>
             )}
           </button>
         </div>
