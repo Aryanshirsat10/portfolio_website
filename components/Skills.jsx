@@ -33,7 +33,7 @@ const Skills = () => {
       hover:shadow-custom-shadow-hover group-hover:opacity-70">
         <div class="w-[95%] h-[95%] duration-500 transition-all group-hover:opacity-70 group-hover:scale-120">
           <div className='flex flex-wrap items-center justify-center mb-5'>
-            <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text'>FrontEnd</h3>
+            <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-800 text-transparent bg-clip-text'>FrontEnd</h3>
           </div>
           <div className='flex flex-wrap gap-4'>
           {fronttechnologies.map((skill,index) =>(
@@ -54,7 +54,7 @@ const Skills = () => {
       hover:shadow-custom-shadow-hover group-hover:opacity-70">
         <div class="w-[95%] h-[95%] duration-500 transition-all group-hover:opacity-70 group-hover:scale-120">
         <div className='flex flex-wrap items-center justify-center mb-5'>
-            <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text'>BackEnd</h3>
+            <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-800 text-transparent bg-clip-text'>BackEnd</h3>
         </div>
           <div className='flex flex-wrap gap-4'>
           {backtechnologies.map((skill,index) =>(
@@ -73,7 +73,7 @@ const Skills = () => {
       hover:shadow-custom-shadow-hover group-hover:opacity-70">
         <div class="w-[95%] h-[95%] duration-500 transition-all group-hover:opacity-70 group-hover:scale-120">
         <div className='flex flex-wrap items-center justify-center mb-5'>
-            <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text'>Programming Languages</h3>
+            <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-800 text-transparent bg-clip-text'>Programming Languages</h3>
         </div>
           <div className='flex flex-wrap gap-4'>
           {languages.map((skill,index) =>(

@@ -13,7 +13,7 @@ export default function Home() {
 
   const [showHomepage, setShowHomepage] = useState(false);
   useEffect(() => {
-    const animationDuration = 7500; // Animation duration in milliseconds
+    const animationDuration = 6000; // Animation duration in milliseconds
 
     const timer = setTimeout(() => {
       // After the animation duration, set showHomepage to true
