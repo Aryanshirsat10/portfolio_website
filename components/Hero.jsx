@@ -10,7 +10,7 @@ import { isMobile } from 'react-device-detect';
           }, [isMobile]);
         return(
             <>
-            {mobile ? (
+            {mobile || "max-w-[320px]"? (
                 <div className='relative mb-9' >
                 <div className='absolute top-3 w-60 h-60 bg-purple-700  rounded-full blur-3xl mix-blend-softlight md:left-[57%]'></div>
                 <div className='absolute top-3 left-[35%] w-60 h-60 bg-yellow-500  rounded-full blur-3xl mix-blend-softlight md:left-[72%]'></div>
