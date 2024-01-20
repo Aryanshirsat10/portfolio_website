@@ -5,7 +5,7 @@ import { projects } from '../constants';
 import { useInView } from 'react-intersection-observer';
 import { fadeIn, textVariant } from '../utils/motion';
 import { isMobile } from 'react-device-detect';
-const ProjectCard = ({ index, name,description, tags, image, source_code_Link,mobile}) => {
+const ProjectCard = ({ index, name,description, tags, image, source_code_link,mobile}) => {
   const variants = {
     moveUp: {
         initial: { y: 150, opacity: 0 },
@@ -27,11 +27,16 @@ const ProjectCard = ({ index, name,description, tags, image, source_code_Link,mo
 const [ref, inView] = useInView({
     triggerOnce: true, // Change this to false if you want the animation to trigger again whenever it comes in view
   });
-// Determine whether the card index is odd or even
+
 const isOdd = index % 2 !== 0;
-// Choose the animation based on the index of the card
+
 const animation = isOdd ? variants.moveUp : variants.moveDown;
 const animationmb = isOdd ? variants.moveLeft:variants.moveRight;
+  const handleClick = () => {
+
+    console.log('Opening source code link:', source_code_link);
+    window.open(source_code_link, '_blank');
+  };
     return(
       <>
       {mobile ? (
@@ -56,8 +61,8 @@ const animationmb = isOdd ? variants.moveLeft:variants.moveRight;
             className="w-full h-full object-cover rounded-2xl"/>
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
-              onClick={()=> window.open(source_code_Link)}
-              className="black-gradient w-10 h-10
+              onClick={handleClick}
+              className="bg-black w-10 h-10
               rounded-full flex justify-center items-center cursor-pointer"
               >
                 
@@ -103,7 +108,7 @@ const animationmb = isOdd ? variants.moveLeft:variants.moveRight;
             className="w-full h-full object-cover rounded-2xl"/>
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
-              onClick={()=> window.open(source_code_Link)}
+              onClick={handleClick}
               className="black-gradient w-10 h-10
               rounded-full flex justify-center items-center cursor-pointer"
               >
@@ -129,6 +134,7 @@ const animationmb = isOdd ? variants.moveLeft:variants.moveRight;
         </Tilt>
       </motion.div>
       )}
+      
       </>
       
     )

@@ -360,7 +360,7 @@
     {
       name: "Bills-N-Thrills",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web application that enables users to search for personal finance management, visualize your spending, and analyze your investments and savings for higher returns.",
       tags: [
         {
           name: "react",
@@ -376,12 +376,12 @@
         },
       ],
       image: '/assets/projectassets.png',
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Aryanshirsat10/bills-n-thrills",
     },
     {
       name: "3D Portfolio",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that provides a boiler plate for the web developers,3D models that add interactive behavior to the portfolio and transitions to make the portfolio stand out.",
       tags: [
         {
           name: "react",
@@ -392,7 +392,7 @@
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "threejs",
           color: "pink-text-gradient",
         },
       ],
@@ -402,35 +402,35 @@
     {
       name: "Media",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A youtube clone web application,provides custom feed based on the previous searches,provides search option to search videos.",
       tags: [
         {
-          name: "nextjs",
+          name: "react",
           color: "text-blue-500",
         },
         {
-          name: "supabase",
+          name: "restapi",
           color: "text-green-500",
         },
         {
-          name: "css",
+          name: "tailwindcss",
           color: "pink-text-gradient",
         },
       ],
       image: '/assets/project3.png',
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Aryanshirsat10/Media",
     },
     {
       name: "Medcare",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Online portal for Doctors that allows doctors to prescribe medications to the patients,patients can book an appointment with the doctors based on the doctors schedule.",
       tags: [
         {
-          name: "nextjs",
+          name: "php",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "html",
           color: "green-text-gradient",
         },
         {
@@ -439,7 +439,7 @@
         },
       ],
       image: '/assets/project4.png',
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Aryanshirsat10/Medcare",
     },
   ];
   
