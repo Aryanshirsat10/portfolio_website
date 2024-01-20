@@ -10,6 +10,7 @@ import Projects from '@/components/Projects';
 import { Element } from 'react-scroll';
 import Contact from '@/components/Contact';
 import { useTheme } from 'next-themes';
+import { isMobile } from 'react-device-detect';
 export default function Home() {
   const {systemTheme,theme, setTheme} = useTheme();
   const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -24,6 +25,10 @@ export default function Home() {
     // Clean up the timer when the component is unmounted
     return () => clearTimeout(timer);
   }, []);
+  const [mobile, setMobile] = useState(null)
+  useEffect(() => {
+      setMobile(isMobile);
+    }, [isMobile]);
     return(
 
       <>
@@ -39,15 +44,15 @@ export default function Home() {
       className={currentTheme === "light" ? 'bg-white' : ''}
     >
       <Navbar />
-      <Hero/>
+      <Hero mobile={mobile}/>
       <Element name='skills'>
         <Skills/>
       </Element>
       <Element name='projects'>
-        <Projects/>
+        <Projects mobile={mobile}/>
       </Element>
       <Element name='contact'>
-        <Contact/>
+        <Contact mobile={mobile}/>
       </Element>
     </motion.div>
        ) : ( 

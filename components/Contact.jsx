@@ -2,11 +2,10 @@ import { useState, useRef,useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { slideIn } from "@/utils/motion";
-import { isMobile } from "react-device-detect";
 
-const Contact = () => {
+
+const Contact = ({mobile}) => {
   const formRef = useRef();
-  const [mobile, setMobile] = useState(null)
   const [form, setForm] = useState({
     name: '',
     email: '',
@@ -52,9 +51,6 @@ const Contact = () => {
       alert('Something went wrong')
     })
   }
-  useEffect(() => {
-    setMobile(isMobile);
-  }, [isMobile]);
   return (
     <>
     {mobile ? (

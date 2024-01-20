@@ -2,12 +2,7 @@
 import React, { useState,useEffect } from 'react';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
-import { isMobile } from 'react-device-detect';
-    const Hero = () => {
-        const [mobile, setMobile] = useState(null)
-        useEffect(() => {
-            setMobile(isMobile);
-          }, [isMobile]);
+    const Hero = ({mobile}) => {
         return(
             <>
             {mobile ? (
