@@ -73,8 +73,8 @@ import { isMobile } from 'react-device-detect';
                         <span className='bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text'> Aryan</span>
                         </h1><br />
                         {/* <h2 className='text-3xl font-bold '>I am a <span className='bg-gradient-to-br from-blue-700  to-pink-500 text-transparent bg-clip-text'>Fullstack Devloper</span></h2> */}
-                        <h2 className='flex text-3xl font-extrabold bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text max-[376px]:text-xl'><span className='text-white'>I am a</span> &nbsp;
-                        <span>
+                        <h2 className='flex text-3xl font-extrabold max-[376px]:text-xl'><span className=''>I am a</span> &nbsp;
+                        <span className='bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text'>
                         <Typewriter
                             options={{
                                 strings: [
