@@ -1,3 +1,4 @@
+"use client"
 import React, { useState,useEffect } from 'react';
 import Link from 'next/link';
 import Typewriter from 'typewriter-effect';
@@ -9,7 +10,7 @@ import { isMobile } from 'react-device-detect';
           }, [isMobile]);
         return(
             <>
-            {mobile ?(
+            {mobile ? (
                 <div className='relative mb-9' >
                 <div className='absolute top-3 w-60 h-60 bg-purple-700  rounded-full blur-3xl mix-blend-softlight md:left-[57%]'></div>
                 <div className='absolute top-3 left-[35%] w-60 h-60 bg-yellow-500  rounded-full blur-3xl mix-blend-softlight md:left-[72%]'></div>
@@ -67,7 +68,7 @@ import { isMobile } from 'react-device-detect';
                 </div>
                 ):(
                     <div className='relative mb-9' >
-                    <div className='absolute top-1/4 left-44 max-[769px]:left-10'>
+                    <div className='absolute top-1/4 left-44 max-[768px]:left-10'>
                         <h1 className='text-8xl font-extrabold md:text-7xl max-[376px]:text-7xl'>Hi <br />I am  
                         <span className='bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text'> Aryan</span>
                         </h1><br />
@@ -90,9 +91,9 @@ import { isMobile } from 'react-device-detect';
                         </span>
                         </h2>
                     </div>
-                <div className='absolute top-1/4 left-2/3 w-80 h-80 bg-purple-700  rounded-full blur-3xl mix-blend-softlight max-[769px]:left-[57%]'></div>
-                <div className='absolute top-1/4 left-3/4 w-80 h-80 bg-yellow-500  rounded-full blur-3xl mix-blend-softlight max[769px]:left-[72%]'></div>
-                <div className='absolute top-1/4 left-70 w-80 h-80 overflow-hidden max-[769px]:left-[62%] '>
+                <div className='absolute top-1/4 left-2/3 w-80 h-80 bg-purple-700  rounded-full blur-3xl mix-blend-softlight max-[768px]:left-[57%]'></div>
+                <div className='absolute top-1/4 left-3/4 w-80 h-80 bg-yellow-500  rounded-full blur-3xl mix-blend-softlight max[768px]:left-[72%]'></div>
+                <div className='absolute top-1/4 left-70 w-80 h-80 overflow-hidden max-[768px]:left-[62%] '>
                     <img src='/assets/profileimg.png' alt=""  className='object-cover w-full h-full rounded-full z-10'/>
                 </div>
 
