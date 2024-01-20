@@ -9,12 +9,13 @@ import Skills from '../components/Skills';
 import Projects from '@/components/Projects';
 import { Element } from 'react-scroll';
 import Contact from '@/components/Contact';
+import { useTheme } from 'next-themes';
 export default function Home() {
-
+  const {systemTheme,theme, setTheme} = useTheme();
+  const currentTheme = theme === 'system' ? systemTheme : theme;
   const [showHomepage, setShowHomepage] = useState(false);
   useEffect(() => {
     const animationDuration = 6000; // Animation duration in milliseconds
-
     const timer = setTimeout(() => {
       // After the animation duration, set showHomepage to true
       setShowHomepage(true);
@@ -35,7 +36,7 @@ export default function Home() {
         delay: 0.5,
         ease: [0, 0.71, 0.2, 1.01]
       }}
-      
+      className={currentTheme === "light" ? 'bg-white' : ''}
     >
       <Navbar />
       <Hero/>

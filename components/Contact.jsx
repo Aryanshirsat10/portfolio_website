@@ -63,14 +63,14 @@ const Contact = () => {
       variants={slideIn('left','tween',0.2, 1)}
       className="flex-[0.75] bg-black-100 p-1 rounded-2xl">
         <h2 className="text-5xl font-extrabold bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text">Contact</h2>
-      <div className="mt-12 flex flex-col shadow-2xl shadow-slate-700">
+      <div className="mt-12 flex flex-col shadow-2xl shadow-slate-700 rounded-lg">
         <form 
           ref={formRef}
           onSubmit={handleSubmit}
           className="p-3 gap-8"
           >
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-2'>Your Name</span>
+              <span className='dark:text-white font-medium mb-2'>Your Name</span>
               <input
                 type='text'
                 name='name'
@@ -81,7 +81,7 @@ const Contact = () => {
               />
             </label>
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-2 mt-4'>Your email</span>
+              <span className='dark:text-white font-medium mb-2 mt-4'>Your email</span>
               <input
                 type='email'
                 name='email'
@@ -92,7 +92,7 @@ const Contact = () => {
               />
             </label>
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-2 mt-4'>Your Message</span>
+              <span className='dark:text-white font-medium mb-2 mt-4'>Your Message</span>
               <textarea
                 rows={7}
                 name='message'
@@ -128,14 +128,14 @@ const Contact = () => {
       variants={slideIn('left','tween',0.2, 1)}
       className="flex-[0.75] bg-black-100 p-8 rounded-2xl ml-6">
         <h2 className="text-5xl font-extrabold bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text">Contact</h2>
-      <div className="mt-12 flex flex-col shadow-2xl shadow-slate-700">
+      <div className="mt-12 flex flex-col shadow-2xl shadow-slate-700 rounded-lg">
         <form 
           ref={formRef}
           onSubmit={handleSubmit}
           className="p-5 gap-8"
           >
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-2'>Your Name</span>
+              <span className='dark:text-white font-medium mb-2'>Your Name</span>
               <input
                 type='text'
                 name='name'
@@ -146,7 +146,7 @@ const Contact = () => {
               />
             </label>
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-2 mt-4'>Your email</span>
+              <span className='dark:text-white font-medium mb-2 mt-4'>Your email</span>
               <input
                 type='email'
                 name='email'
@@ -157,7 +157,7 @@ const Contact = () => {
               />
             </label>
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-2 mt-4'>Your Message</span>
+              <span className='dark:text-white font-medium mb-2 mt-4'>Your Message</span>
               <textarea
                 rows={7}
                 name='message'

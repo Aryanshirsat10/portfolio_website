@@ -72,7 +72,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className='sm:hidden flex flex-1 justify-end items-center'>
+        <div className='md:hidden flex flex-1 justify-end items-center'>
             <img 
             src={toggle ? "/assets/cross.svg" : "/assets/menu.svg"}
             alt="menu"
