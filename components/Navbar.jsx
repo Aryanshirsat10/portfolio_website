@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'next/link';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+import { navLinks } from '@/constants';
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,6 +12,7 @@ const Navbar = () => {
     scroll.scrollToTop();
     setShowMenu(false);
   };
+  const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState('');
 
   return (
@@ -33,7 +35,7 @@ const Navbar = () => {
             smooth={true}
             offset={-30} // Adjust offset if needed based on your layout
             duration={500}
-            className="text hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out cursor-pointer"
+            className="text-white hover:text-navred text-lg font-semibold transition-all duration-300 ease-in-out cursor-pointer"
           >
             Skills
           </ScrollLink>
@@ -70,7 +72,45 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu Toggle */}
-        <div className="md:hidden">
+        <div className='sm:hidden flex flex-1 justify-end items-center'>
+            <img 
+            src={toggle ? "/assets/cross.svg" : "/assets/menu.svg"}
+            alt="menu"
+            className='w-[28px] h-[28px]
+            object-contain cursor-pointer'
+            onClick={() => setToggle(!toggle)}
+            />
+            <div className={`${!toggle ? 'hidden' : 'flex' } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+            <ul className='list-none flex  justify-end items-start flex-col gap-4'>
+          {navLinks.map((Link) =>(
+            <li
+              key={Link.to}
+              className={`${
+                active === Link.title
+                ? "text-white"
+                :"text-secondary"
+              }  font-medium cursor-pointer text-[16px]`}
+              onClick={() => {
+                setToggle(!toggle);
+                setActive(Link.title);
+              }}
+            >
+              <ScrollLink
+                activeClass="active"
+                to={Link.to} // This should match the 'name' prop of the Element
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                {Link.title}
+              </ScrollLink>
+            </li>
+          ))}
+        </ul>
+            </div>
+        </div>
+        {/* <div className="md:hidden">
           <button onClick={toggleMenu}>
             {showMenu ? (
               <img src="/assets/cross.svg" alt="Close Menu" className='w-10 h-10 '/>
@@ -81,7 +121,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       {showMenu && (
         <div className="md:hidden mt-3">
           <div className="container mx-auto p-2">
@@ -107,10 +146,8 @@ const Navbar = () => {
             >
               Projects
             </ScrollLink>
-            {/* Add similar ScrollLink components for other sections */}
-          </div>
-        </div>
-      )}
+      </div>*/}
+        </div> 
     </nav>
   );
 };

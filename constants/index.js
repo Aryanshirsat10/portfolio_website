@@ -26,15 +26,15 @@
 //   } from "../assets";
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      to: "skills",
+      title: "Skills",
     },
     {
-      id: "work",
-      title: "Work",
+      to: "projects",
+      title: "Projects",
     },
     {
-      id: "contact",
+      to: "contact",
       title: "Contact",
     },
   ];
@@ -406,11 +406,11 @@
       tags: [
         {
           name: "nextjs",
-          color: "blue-text-gradient",
+          color: "text-blue-500",
         },
         {
           name: "supabase",
-          color: "green-text-gradient",
+          color: "text-green-500",
         },
         {
           name: "css",
