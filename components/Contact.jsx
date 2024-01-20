@@ -123,10 +123,10 @@ const Contact = () => {
       </motion.div>
     </div>
     ):(
-      <div className='xl:mt-12 xl:flex-row flex-wrap flex-col-reverse flex gap-10 overflow-hidden'>
+      <div className='p-5 xl:mt-12 xl:flex-row flex-wrap flex-col-reverse flex gap-10 overflow-hidden'>
       <motion.div 
       variants={slideIn('left','tween',0.2, 1)}
-      className="flex bg-black-100 rounded-2xl">
+      className="flex-[0.75] bg-black-100 p-8 rounded-2xl ml-6">
         <h2 className="text-5xl font-extrabold bg-gradient-to-br from-pink-500 to-blue-700 text-transparent bg-clip-text">Contact</h2>
       <div className="mt-12 flex flex-col shadow-2xl shadow-slate-700">
         <form 
