@@ -10,7 +10,7 @@ import Typewriter from 'typewriter-effect';
                 <div className='absolute top-3 w-60 h-60 bg-purple-700  rounded-full blur-3xl mix-blend-softlight md:left-[57%]'></div>
                 <div className='absolute top-3 left-[35%] w-60 h-60 bg-yellow-500  rounded-full blur-3xl mix-blend-softlight md:left-[72%]'></div>
                 <div className='absolute top-3 w-80 h-80 left-5 overflow-hidden md:left-[62%] '>
-                    <img src='/assets/profileimg.png' alt=""  className='object-cover w-full h-full rounded-full z-10'/>
+                    <img src='/assets/profileimg.png' alt="profile image"  className='object-cover w-full h-full rounded-full z-10'/>
                 </div>
                 <div className='mt-5 right-5 absolute top-[50%] justify-center items-start text-center md:left-10 max-[376px]:left-10'>
                     <h1 className='text-8xl font-extrabold md:text-7xl max-[376px]:text-7xl'>Hi,I am  
