@@ -32,7 +32,7 @@ export default function Home() {
     return(
 
       <>
-      {/* {showHomepage ? (
+      {showHomepage ? (
       <motion.div 
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: 1, scale: 1 }}
@@ -42,7 +42,7 @@ export default function Home() {
         ease: [0, 0.71, 0.2, 1.01]
       }}
       className={currentTheme === "light" ? 'bg-white' : ''}
-    > */}
+    >
       <Navbar />
       <Hero mobile={mobile}/>
       <Element name='skills'>
@@ -54,10 +54,10 @@ export default function Home() {
       <Element name='contact'>
         <Contact mobile={mobile}/>
       </Element>
-    {/* </motion.div>
+    </motion.div>
        ) : ( 
          <Introanimation /> 
-       )}  */}
+       )} 
       
         {/* )} */}
       </>
