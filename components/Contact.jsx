@@ -2,6 +2,7 @@ import { useState, useRef,useEffect } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { slideIn } from "@/utils/motion";
+import validator from 'validator';
 
 
 const Contact = ({mobile}) => {
@@ -18,9 +19,21 @@ const Contact = ({mobile}) => {
 
     setForm({ ...form, [name]: value })
   }
+  const isValidEmail = (email) => {
+    return validator.isEmail(email);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!form.name || !form.email || !form.message) {
+      alert('Please fill out all fields before submitting.');
+      return;
+    }
+  
+    if (!isValidEmail(form.email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
     setLoading(true);
 
     emailjs.send('service_teyzzz3',
@@ -32,7 +45,6 @@ const Contact = ({mobile}) => {
       to_email: 'youremailid@gmail.com',
       message: form.message,
     },
-    'RykYQHv4g3qyOp54W'
     )
     .then(()=>{
       setLoading(false);
