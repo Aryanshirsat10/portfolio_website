@@ -4,8 +4,8 @@ import emailjs from "@emailjs/browser";
 import { slideIn } from "@/utils/motion";
 import validator from 'validator';
 
-
 const Contact = ({mobile}) => {
+
   const formRef = useRef();
   const [form, setForm] = useState({
     name: '',
@@ -22,8 +22,8 @@ const Contact = ({mobile}) => {
   const isValidEmail = (email) => {
     return validator.isEmail(email);
   };
-
   const handleSubmit = (e) => {
+    
     e.preventDefault();
     if (!form.name || !form.email || !form.message) {
       alert('Please fill out all fields before submitting.');
@@ -35,7 +35,6 @@ const Contact = ({mobile}) => {
       return;
     }
     setLoading(true);
-
     emailjs.send('service_teyzzz3',
     'template_oz9tqgp',
     {
@@ -45,6 +44,7 @@ const Contact = ({mobile}) => {
       to_email: 'youremailid@gmail.com',
       message: form.message,
     },
+    'RykYQHv4g3qyOp54W'
     )
     .then(()=>{
       setLoading(false);
