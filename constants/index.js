@@ -235,6 +235,50 @@
   
   const projects = [
     {
+      name: "Aspirants Ind",
+      description:
+        "A freelance project,Aspirants is a platform that forms a bridge between candidates and colleges by providing candidates with all the real-time information needed for their desired schools/colleges in one place with just one click of a button.",
+      tags: [
+        {
+          name: "react",
+          color: "text-blue-500",
+        },
+        {
+          name: "restapi",
+          color: "text-green-500",
+        },
+        {
+          name: "tailwindcss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: '/assets/project1.png',
+      source_code_link: "https://github.com/Dhruv883/Aspirants",
+      link: "https://aspirantsind.com/",
+    },
+    {
+      name: "Redshift Racing",
+      description:
+        "Designed and developed a dynamic and visually engaging website for the Redshift Racing Team, aimed at showcasing their achievements, team members, upcoming events, and partnerships to a global audience",
+      tags: [
+        {
+          name: "react",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "restapi",
+          color: "green-text-gradient",
+        },
+        {
+          name: "tailwindcss",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: '/assets/project2.png',
+      source_code_link: "https://github.com/Aryanshirsat10/rsr_website",
+      link: "https://redshift-racing.vercel.app/",
+    },
+    {
       name: "Bills-N-Thrills",
       description:
         "Web application that enables users to search for personal finance management, visualize your spending, and analyze your investments and savings for higher returns.",
@@ -254,48 +298,7 @@
       ],
       image: '/assets/projectassets.png',
       source_code_link: "https://github.com/Aryanshirsat10/bills-n-thrills",
-    },
-    {
-      name: "3D Portfolio",
-      description:
-        "Web application that provides a boiler plate for the web developers,3D models that add interactive behavior to the portfolio and transitions to make the portfolio stand out.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "threejs",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: '/assets/project2.png',
-      source_code_link: "https://github.com/Aryanshirsat10/3d_portfolio_template",
-    },
-    {
-      name: "Media",
-      description:
-        "A youtube clone web application,provides custom feed based on the previous searches,provides search option to search videos.",
-      tags: [
-        {
-          name: "react",
-          color: "text-blue-500",
-        },
-        {
-          name: "restapi",
-          color: "text-green-500",
-        },
-        {
-          name: "tailwindcss",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: '/assets/project3.png',
-      source_code_link: "https://github.com/Aryanshirsat10/Media",
+      link: "https://github.com/Aryanshirsat10/bills-n-thrills",
     },
     {
       name: "Medcare",
@@ -317,6 +320,7 @@
       ],
       image: '/assets/project4.png',
       source_code_link: "https://github.com/Aryanshirsat10/Medcare",
+      link: "https://github.com/Aryanshirsat10/Medcare",
     },
   ];
   

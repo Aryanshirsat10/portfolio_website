@@ -5,7 +5,8 @@ import { projects } from '../constants';
 import { useInView } from 'react-intersection-observer';
 import { fadeIn, textVariant } from '../utils/motion';
 import { isMobile } from 'react-device-detect';
-const ProjectCard = ({ index, name,description, tags, image, source_code_link,mobile}) => {
+import { handleClientScriptLoad } from "next/script";
+const ProjectCard = ({ index, name,description, tags, image,link, source_code_link,mobile}) => {
   const variants = {
     moveUp: {
         initial: { y: 150, opacity: 0 },
@@ -37,6 +38,10 @@ const animationmb = isOdd ? variants.moveLeft:variants.moveRight;
     console.log('Opening source code link:', source_code_link);
     window.open(source_code_link, '_blank');
   };
+  const handleCardClick = () =>{
+    console.log('Opening project link:', link);
+    window.open(link, '_blank');
+  };
     return(
       <>
       {mobile ? (
@@ -54,11 +59,12 @@ const animationmb = isOdd ? variants.moveLeft:variants.moveRight;
         }}
         className="bg-black p-5 rounded-2xl sm:w-[360px] w-full"
         >
-          <div className="relative w-full h-[230px]">
+          <div className="relative w-full h-[230px]" onClick={handleCardClick}>
             <img 
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"/>
+            className="w-full h-full object-cover rounded-2xl"
+            />
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
               onClick={handleClick}
@@ -101,11 +107,11 @@ const animationmb = isOdd ? variants.moveLeft:variants.moveRight;
         }}
         className="bg-black p-5 rounded-2xl sm:w-[360px] w-full"
         >
-          <div className="relative w-full h-[230px]">
+          <div className="relative w-full h-[230px]" onClick={handleCardClick}>
             <img 
             src={image}
             alt={name}
-            className="w-full h-full object-cover rounded-2xl"/>
+            className="w-full h-full object-cover rounded-2xl cursor-pointer"/>
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div
               onClick={handleClick}
