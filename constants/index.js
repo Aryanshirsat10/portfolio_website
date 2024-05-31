@@ -248,7 +248,7 @@
           color: "text-green-500",
         },
         {
-          name: "tailwindcss",
+          name: "nodejs",
           color: "pink-text-gradient",
         },
       ],
