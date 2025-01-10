@@ -30,8 +30,8 @@ const Skills = () => {
       <div className="group relative h-[450px] w-[430px] rounded-2xl shadow-custom-2xl shadow-[#b74aaa] 
       flex p-10 duration-1000 preserve-3d 
       animate-rot text-white bg-skillbg max-[376px]:h-[740px] max-[426px]:h-[530px]
-      hover:shadow-custom-shadow-hover group-hover:opacity-70">
-        <div class="w-[98%] h-[98%] duration-500 transition-all group-hover:opacity-70 group-hover:scale-120">
+      sm:hover:shadow-custom-shadow-hover sm:group-hover:opacity-70">
+        <div class="w-[98%] h-[98%] duration-500 transition-all sm:group-hover:opacity-70 sm:group-hover:scale-120">
           <div className='flex flex-wrap items-center justify-center mb-5'>
             <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-800 text-transparent bg-clip-text'>FrontEnd</h3>
           </div>
@@ -51,8 +51,8 @@ const Skills = () => {
       <div className="group relative h-[450px] w-[430px] rounded-2xl shadow-custom-2xl shadow-[#b74aaa] 
       flex p-10 duration-1000 preserve-3d 
       animate-rot text-white bg-skillbg max-[376px]:h-[630px] max-[426px]:h-[530px]
-      hover:shadow-custom-shadow-hover group-hover:opacity-70">
-        <div class="w-[95%] h-[95%] duration-500 transition-all group-hover:opacity-70 group-hover:scale-120">
+      sm:hover:shadow-custom-shadow-hover sm:group-hover:opacity-70">
+        <div class="w-[95%] h-[95%] duration-500 transition-all sm:group-hover:opacity-70 sm:group-hover:scale-120">
         <div className='flex flex-wrap items-center justify-center mb-5'>
             <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-800 text-transparent bg-clip-text'>BackEnd</h3>
         </div>
@@ -70,8 +70,8 @@ const Skills = () => {
       <div className="group relative h-[450px] w-[430px] rounded-2xl shadow-custom-2xl shadow-[#b74aaa] 
       flex p-10 duration-1000 preserve-3d 
       animate-rot text-white bg-skillbg 
-      hover:shadow-custom-shadow-hover group-hover:opacity-70">
-        <div class="w-[95%] h-[95%] duration-500 transition-all group-hover:opacity-70 group-hover:scale-120">
+      sm:hover:shadow-custom-shadow-hover sm:group-hover:opacity-70">
+        <div class="w-[95%] h-[95%] duration-500 transition-all sm:group-hover:opacity-70 sm:group-hover:scale-120">
         <div className='flex flex-wrap items-center justify-center mb-5'>
             <h3 className='text-2xl font-bold bg-gradient-to-br from-pink-500 to-blue-800 text-transparent bg-clip-text'>Programming Languages</h3>
         </div>

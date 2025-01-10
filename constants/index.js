@@ -301,26 +301,26 @@
       link: "https://github.com/Aryanshirsat10/bills-n-thrills",
     },
     {
-      name: "Medcare",
+      name: "ConnectHub",
       description:
-        "Online portal for Doctors that allows doctors to prescribe medications to the patients,patients can book an appointment with the doctors based on the doctors schedule.",
+        "ConnectHub, an innovative platform designed to transform the way students and alumni connect and collaborate within the educational community.",
       tags: [
         {
-          name: "php",
+          name: "React Native",
           color: "blue-text-gradient",
         },
         {
-          name: "html",
+          name: "PocketHost",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Tailwindcss",
           color: "pink-text-gradient",
         },
       ],
       image: '/assets/project4.png',
-      source_code_link: "https://github.com/Aryanshirsat10/Medcare",
-      link: "https://github.com/Aryanshirsat10/Medcare",
+      source_code_link: "https://github.com/Aryanshirsat10/Connect_Hub",
+      link: "https://github.com/Aryanshirsat10/Connect_Hub",
     },
   ];
   
